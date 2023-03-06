@@ -35,7 +35,7 @@ public class Combination {
     	
     	for(int i = start; i <= n; i++) {
     		result[cnt] = arr[i];
-    		combi(start+1, cnt + 1);
+    		combi(i+1, cnt + 1);
     	}
     }
     
@@ -47,7 +47,7 @@ public class Combination {
     	
     	for(int i = start; i <= n; i++) {
     		result[cnt] = arr[i];
-    		combiRepitition(start, cnt + 1);
+    		combiRepitition(i, cnt + 1);
     	}
     }
     
